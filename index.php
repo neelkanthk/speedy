@@ -268,10 +268,12 @@
                     </div>
                 </div>
                 <div id="ipArea">
-                    <span id="ip"></span>
+                    <strong>Your public IP address: </strong><span id="ip"></span>
+                    <p></p>
+                    <strong>Test Server: </strong><span>13.232.15.239 (Mumbai, India)</span>
                 </div>
             </div>
-            <p><a href="https://github.com/neelkanthk/speedy">Speedy</a> is based on <a href="https://github.com/librespeed/speedtest">Speedtest</a></p>
+            <p><a href="https://github.com/neelkanthk/speedy">Speedy</a> is based on <a href="https://github.com/librespeed/speedtest">LibreSpeed</a></p>
 
         </div>
         <script type="text/javascript">setTimeout(function () {
