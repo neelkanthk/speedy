@@ -241,7 +241,7 @@
         <div id="testWrapper">
             <div id="startStopBtn" onclick="startStop()"></div>
             <div id="test">
-                <div style="display: none;" class="testGroup">
+                <div class="testGroup">
                     <div class="testArea2">
                         <div class="testName">Ping</div>
                         <div id="pingText" class="meterText" style="color:#AA6060"></div>
