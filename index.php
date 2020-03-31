@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162399694-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-162399694-1');
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
         <meta charset="UTF-8" />
         <meta name="description" content="Test your Internet's speed in a jiffy." />
         <meta name="keywords" content="speedy, speedtest, internet, download, upload, mbps, gbps, fast, bandwidth">
-        <meta name="author" content="Neelkanth Kaushik">
+        <meta name="author" content="www,datatype.in">
         <link rel="shortcut icon" href="favicon.ico">
         <script type="text/javascript" src="speedtest.js"></script>
         <script type="text/javascript">
@@ -239,7 +250,7 @@
         <h1>Speedy</h1>
         <h4>Check your Internet's speed in a jiffy</h4>
         <div id="testWrapper">
-            <div id="startStopBtn" onclick="startStop()"></div>
+            <div id="startStopBtn" onclick="startStop(); ga('send', 'event', 'StartButton', 'Click')"></div>
             <div id="test">
                 <div style="display: none;" class="testGroup">
                     <div class="testArea2">
