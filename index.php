@@ -75,6 +75,7 @@
             function startStop() {
                 if (s.getState() == 3) {
                     //speedtest is running, abort
+                    ga('send', 'event', 'SpeedTest', 'Abort');
                     s.abort();
                     data = null;
                     I("startStopBtn").className = "";
@@ -89,6 +90,7 @@
                         I("startStopBtn").className = "";
                         updateUI(true);
                     };
+                    ga('send', 'event', 'SpeedTest', 'Start');
                     s.start();
                 }
             }
@@ -250,7 +252,7 @@
         <h1>Speedy</h1>
         <h4>Check your Internet's speed in a jiffy</h4>
         <div id="testWrapper">
-            <div id="startStopBtn" onclick="startStop(); ga('send', 'event', 'StartButton', 'Click')"></div>
+            <div id="startStopBtn" onclick="startStop()"></div>
             <div id="test">
                 <div style="display: none;" class="testGroup">
                     <div class="testArea2">
