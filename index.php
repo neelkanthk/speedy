@@ -230,6 +230,10 @@
             }
         </style>
         <title>Speedy-Check your Internet's speed in a jiffy</title>
+        <!-- Appzi: Capture Insightful Feedback -->
+        <script async src="https://w.appzi.io/bootstrap/bundle.js?token=OTQU9"></script>
+        <!-- End Appzi -->
+
     </head>
     <body>
         <h1>Speedy</h1>
@@ -267,7 +271,8 @@
                     <span id="ip"></span>
                 </div>
             </div>
-            <!--<a href="https://github.com/librespeed/speedtest">Source code</a>-->
+            <p><a href="https://github.com/neelkanthk/speedy">Speedy</a> is based on <a href="https://github.com/librespeed/speedtest">Speedtest</a></p>
+
         </div>
         <script type="text/javascript">setTimeout(function () {
                 initUI()
