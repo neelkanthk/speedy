@@ -88,7 +88,7 @@
                 if (uiData == null)
                     return;
                 var status = uiData.testState;
-                I("ip").textContent = uiData.clientIp;
+                I("ip").textContent = 'Your public IP address: ' + uiData.clientIp;
                 I("dlText").textContent = (status == 1 && uiData.dlStatus == 0) ? "..." : format(uiData.dlStatus);
                 drawMeter(I("dlMeter"), mbpsToAmount(Number(uiData.dlStatus * (status == 1 ? oscillate() : 1))), meterBk, dlColor, Number(uiData.dlProgress), progColor);
                 I("ulText").textContent = (status == 3 && uiData.ulStatus == 0) ? "..." : format(uiData.ulStatus);
@@ -268,7 +268,7 @@
                     </div>
                 </div>
                 <div id="ipArea">
-                    <strong>Your public IP address: </strong><span id="ip"></span>
+                    <span id="ip"></span>
                     <p></p>
                     <strong>Test Server: </strong><span>13.232.15.239 (Mumbai, India)</span>
                 </div>
