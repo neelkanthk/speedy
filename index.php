@@ -16,7 +16,10 @@
         <meta charset="UTF-8" />
         <meta name="description" content="Test your Internet's speed." />
         <meta name="keywords" content="speedy, speedtest, internet, download, upload, mbps, gbps, fast, bandwidth, speed.com, speedy.com, speed.in. speed, internetspeed, uploadspeed, downloadspeed, fast">
-        <meta name="author" content="www,datatype.in">
+        <meta name="author" content="https://www.datatype.in">
+        <meta property="og:image" content="https://www.datatype.in/speedy/favicon.ico" />
+        <meta property="og:image:width" content="180"/>
+        <meta property="og:image:height" content="110"/>
         <link rel="shortcut icon" href="favicon.ico">
         <title>Speedy-Test your Internet's speed</title>
         <script type="text/javascript" src="speedtest.js"></script>
@@ -76,7 +79,7 @@
             function startStop() {
                 if (s.getState() == 3) {
                     //speedtest is running, abort
-                    gtag('event','abort', { 'event_category':'SpeedTest', 'event_label':'SpeedTest Abort' });
+                    gtag('event', 'abort', {'event_category': 'SpeedTest', 'event_label': 'SpeedTest Abort'});
                     s.abort();
                     data = null;
                     I("startStopBtn").className = "";
@@ -91,7 +94,7 @@
                         I("startStopBtn").className = "";
                         updateUI(true);
                     };
-                    gtag('event','start', { 'event_category':'SpeedTest', 'event_label':'SpeedTest Start' });
+                    gtag('event', 'start', {'event_category': 'SpeedTest', 'event_label': 'SpeedTest Start'});
                     s.start();
                 }
             }
@@ -176,7 +179,7 @@
             }
             #test{
                 margin-top:2em;
-                margin-bottom:9em;
+                margin-bottom:7em;
             }
             div.testArea{
                 display:inline-block;
@@ -237,6 +240,23 @@
                 display:block;
                 margin: 0 auto;
             }
+            #logo_title_wrapper {
+                width:395px;
+                margin-left: 36%;
+                overflow: hidden; /* will contain if #first is longer than #second */
+            }
+            #speedy_logo {
+                width: 10px;
+                float:left;
+            }
+            #speedy_title {
+                margin-top: 6%;
+                overflow: hidden;
+            }
+            #speedy_tagline{
+                margin-left: 19%;
+                margin-top: -4%;
+            }
             @media all and (max-width:40em){
                 body{
                     font-size:0.8em;
@@ -249,8 +269,14 @@
 
     </head>
     <body>
-        <h1>Speedy</h1>
-        <p>Test your Internet's speed</p>
+        <div id="logo_title_wrapper">
+            <div id="speedy_logo"><img src="logo.png" /></div>
+            <div id="speedy_title">
+                <h1>Speedy</h1>
+                <p id="speedy_tagline">Test your Internet's speed</p>
+            </div>
+        </div>
+
         <p></p>
         <div id="testWrapper">
             <div id="startStopBtn" onclick="startStop()"></div>
@@ -288,10 +314,11 @@
                 </div>
             </div>
             <p>
-                <a href="#" onclick="gtag('event','click', { 'event_category':'SpeedyRepository', 'event_label':'Visit' });">Speedy</a> 
+                <a href="#" onclick="gtag('event', 'click', {'event_category': 'SpeedyRepository', 'event_label': 'Visit'});">Speedy</a> 
                 <span>is based on</span> 
-                <a href="https://github.com/librespeed/speedtest" onclick="gtag('event','click', { 'event_category':'LibrespeedtestRepository', 'event_label':'Visit' });" target="_blank">LibreSpeed</a>
+                <a href="https://github.com/librespeed/speedtest" onclick="gtag('event', 'click', {'event_category': 'LibrespeedtestRepository', 'event_label': 'Visit'});" target="_blank">LibreSpeed</a>
             </p>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
         <script type="text/javascript">setTimeout(function () {
                 initUI()
