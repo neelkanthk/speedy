@@ -289,7 +289,7 @@
             </div>
             <p>
                 <a href="#" onclick="ga('send', 'event', 'SpeedyRepo', 'Click');">Speedy</a> 
-                is based on 
+                <span>is based on</span> 
                 <a href="https://github.com/librespeed/speedtest" onclick="ga('send', 'event', 'LibreSpeed', 'Click');">LibreSpeed</a>
             </p>
         </div>
