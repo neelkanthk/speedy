@@ -290,7 +290,7 @@
             <p>
                 <a href="#" onclick="gtag('event','click', { 'event_category':'SpeedyRepository', 'event_label':'Visit' });">Speedy</a> 
                 <span>is based on</span> 
-                <a href="https://github.com/librespeed/speedtest" onclick="gtag('event','click', { 'event_category':'LibrespeedtestRepository', 'event_label':'Visit' });">LibreSpeed</a>
+                <a href="https://github.com/librespeed/speedtest" onclick="gtag('event','click', { 'event_category':'LibrespeedtestRepository', 'event_label':'Visit' });" target="_blank">LibreSpeed</a>
             </p>
         </div>
         <script type="text/javascript">setTimeout(function () {
