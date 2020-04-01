@@ -14,10 +14,11 @@
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
         <meta charset="UTF-8" />
-        <meta name="description" content="Test your Internet's speed in a jiffy." />
+        <meta name="description" content="Test your Internet's speed." />
         <meta name="keywords" content="speedy, speedtest, internet, download, upload, mbps, gbps, fast, bandwidth">
         <meta name="author" content="www,datatype.in">
         <link rel="shortcut icon" href="favicon.ico">
+        <title>Speedy-Test your Internet's speed</title>
         <script type="text/javascript" src="speedtest.js"></script>
         <script type="text/javascript">
             function I(i) {
@@ -175,7 +176,7 @@
             }
             #test{
                 margin-top:2em;
-                margin-bottom:12em;
+                margin-bottom:9em;
             }
             div.testArea{
                 display:inline-block;
@@ -242,7 +243,6 @@
                 }
             }
         </style>
-        <title>Speedy-Check your Internet's speed in a jiffy</title>
         <!-- Appzi: Capture Insightful Feedback -->
         <script async src="https://w.appzi.io/bootstrap/bundle.js?token=OTQU9"></script>
         <!-- End Appzi -->
@@ -250,7 +250,8 @@
     </head>
     <body>
         <h1>Speedy</h1>
-        <h4>Check your Internet's speed in a jiffy</h4>
+        <p>Test your Internet's speed</p>
+        <p></p>
         <div id="testWrapper">
             <div id="startStopBtn" onclick="startStop()"></div>
             <div id="test">
@@ -286,8 +287,11 @@
                     <strong>Test Server: </strong><span>13.232.15.239 (Mumbai, India)</span>
                 </div>
             </div>
-            <p><a href="https://github.com/neelkanthk/speedy">Speedy</a> is based on <a href="https://github.com/librespeed/speedtest">LibreSpeed</a></p>
-
+            <p>
+                <a href="#" onclick="ga('send', 'event', 'SpeedyRepo', 'Click');">Speedy</a> 
+                is based on 
+                <a href="https://github.com/librespeed/speedtest" onclick="ga('send', 'event', 'LibreSpeed', 'Click');">LibreSpeed</a>
+            </p>
         </div>
         <script type="text/javascript">setTimeout(function () {
                 initUI()
