@@ -240,23 +240,6 @@
                 display:block;
                 margin: 0 auto;
             }
-            #logo_title_wrapper {
-                width:395px;
-                margin-left: 36%;
-                overflow: hidden; /* will contain if #first is longer than #second */
-            }
-            #speedy_logo {
-                width: 10px;
-                float:left;
-            }
-            #speedy_title {
-                margin-top: 6%;
-                overflow: hidden;
-            }
-            #speedy_tagline{
-                margin-left: 19%;
-                margin-top: -4%;
-            }
             @media all and (max-width:40em){
                 body{
                     font-size:0.8em;
@@ -273,7 +256,7 @@
             <div id="speedy_logo"><img src="logo.png" /></div>
             <div id="speedy_title">
                 <h1>Speedy</h1>
-                <p id="speedy_tagline">Test your Internet's speed</p>
+                <h3 id="speedy_tagline">Test your Internet's speed</h3>
             </div>
         </div>
 
