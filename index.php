@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
         <meta charset="UTF-8" />
         <meta name="description" content="Test your Internet's speed." />
-        <meta name="keywords" content="speedy, speedtest, internet, download, upload, mbps, gbps, fast, bandwidth">
+        <meta name="keywords" content="speedy, speedtest, internet, download, upload, mbps, gbps, fast, bandwidth, speed.com, speedy.com, speed.in. speed, internetspeed, uploadspeed, downloadspeed, fast">
         <meta name="author" content="www,datatype.in">
         <link rel="shortcut icon" href="favicon.ico">
         <title>Speedy-Test your Internet's speed</title>
