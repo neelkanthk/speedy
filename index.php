@@ -76,7 +76,7 @@
             function startStop() {
                 if (s.getState() == 3) {
                     //speedtest is running, abort
-                    ga('send', 'event', 'SpeedTest', 'Abort');
+                    gtag('event','abort', { 'event_category':'SpeedTest', 'event_label':'SpeedTest Abort' });
                     s.abort();
                     data = null;
                     I("startStopBtn").className = "";
@@ -91,7 +91,7 @@
                         I("startStopBtn").className = "";
                         updateUI(true);
                     };
-                    ga('send', 'event', 'SpeedTest', 'Start');
+                    gtag('event','start', { 'event_category':'SpeedTest', 'event_label':'SpeedTest Start' });
                     s.start();
                 }
             }
@@ -288,9 +288,9 @@
                 </div>
             </div>
             <p>
-                <a href="#" onclick="ga('send', 'event', 'SpeedyRepo', 'Click');">Speedy</a> 
+                <a href="#" onclick="gtag('event','click', { 'event_category':'SpeedyRepository', 'event_label':'Visit' });">Speedy</a> 
                 <span>is based on</span> 
-                <a href="https://github.com/librespeed/speedtest" onclick="ga('send', 'event', 'LibreSpeed', 'Click');">LibreSpeed</a>
+                <a href="https://github.com/librespeed/speedtest" onclick="gtag('event','click', { 'event_category':'LibrespeedtestRepository', 'event_label':'Visit' });">LibreSpeed</a>
             </p>
         </div>
         <script type="text/javascript">setTimeout(function () {
