@@ -17,9 +17,9 @@
         <meta name="description" content="Test your Internet's speed." />
         <meta name="keywords" content="speedy, speedtest, internet, download, upload, mbps, gbps, fast, bandwidth, speed.com, speedy.com, speed.in. speed, internetspeed, uploadspeed, downloadspeed, fast">
         <meta name="author" content="https://www.datatype.in">
-        <meta property="og:image" content="https://www.datatype.in/speedy/favicon.ico" />
-        <meta property="og:image:width" content="180"/>
-        <meta property="og:image:height" content="110"/>
+        <meta property="og:image" content="https://www.datatype.in/speedy/logo.png" />
+        <meta property="og:image:width" content="128"/>
+        <meta property="og:image:height" content="128"/>
         <link rel="shortcut icon" href="favicon.ico">
         <title>Speedy-Test your Internet's speed</title>
         <script type="text/javascript" src="speedtest.js"></script>
