@@ -253,7 +253,7 @@
     </head>
     <body>
         <div id="logo_title_wrapper">
-            <div id="speedy_logo"><img src="logo.png" /></div>
+            <div id="speedy_logo"><img src="logo.png" width="100px" height="100px" /></div>
             <div id="speedy_title">
                 <h1>Speedy</h1>
                 <h3 id="speedy_tagline">Test your Internet's speed</h3>
