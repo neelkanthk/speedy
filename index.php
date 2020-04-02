@@ -181,8 +181,10 @@
                         <div class="unit">Mbps</div>
                     </div>
                 </div>
-                <div id="ipArea">
+                <div style="display: none;" id="ipArea">
                     <span id="ip"></span>
+                    <p></p>
+                    <strong>Test Server: </strong><span>13.232.15.239 (Mumbai, India)</span>
                 </div>
                 <div id="social_share_container">
                     <!-- Sharingbutton Facebook -->
