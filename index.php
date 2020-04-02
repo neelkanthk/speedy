@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
         <meta charset="UTF-8" />
         <meta name="description" content="Test your Internet's speed." />
-        <meta name="keywords" content="speedy, speedtest, internet, download, upload, mbps, gbps, fast, bandwidth, speed.com, speedy.com, speed.in. speed, internetspeed, uploadspeed, downloadspeed, fast">
+        <meta name="keywords" content="speedy,speedtest,speed test,internet,download,upload,mbps,gbps,fast,bandwidth,speedy.com,speedy.in,speed,internet speed test,upload speed,download speed,broadband speed test,my internet speed is slow, how to check internet speed, slow download speed,3g speed test,4g speed test,VoLTE,5g speed,mobile internet,mobile internet speed,mobile internet speed test">
         <meta name="author" content="https://www.datatype.in">
         <meta property="og:image" content="https://www.datatype.in/speedy/logo.png" />
         <meta property="og:image:width" content="128"/>
