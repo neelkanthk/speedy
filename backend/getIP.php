@@ -67,6 +67,10 @@ if (strpos($ip, '169.254.') === 0) { // IPv4 link-local
  * @return float [km]
  */
 function distance($latitudeFrom, $longitudeFrom, $latitudeTo, $longitudeTo) {
+    if(empty($latitudeFrom) || empty($longitudeFrom))
+    {
+        return 0;
+    }
     $rad = M_PI / 180;
     $theta = $longitudeFrom - $longitudeTo;
     $dist = sin($latitudeFrom * $rad) * sin($latitudeTo * $rad) + cos($latitudeFrom * $rad) * cos($latitudeTo * $rad) * cos($theta * $rad);
@@ -79,9 +83,9 @@ function getIpInfoTokenString(){
 	if(empty($IPINFO_APIKEY)) return "";
 	return "?token=".$IPINFO_APIKEY;
 }
-if (isset($_GET["isp"])) {
+if (isset($_GET["isp"]) && !empty($_GET["isp"])) {
     $isp = "";
-	$rawIspInfo=null;
+	$rawIspInfo = null;
     try {
         $json = file_get_contents("https://ipinfo.io/" . $ip . "/json".getIpInfoTokenString());
         $details = json_decode($json, true);
@@ -100,7 +104,7 @@ if (isset($_GET["isp"])) {
         if (array_key_exists("loc", $details)){
             $clientLoc = $details["loc"];
 		}
-        if (isset($_GET["distance"])) {
+        if (isset($_GET["distance"]) && !empty($_GET["distance"])) {
             if ($clientLoc) {
 				$locFile="getIP_serverLocation.php";
 				$serverLoc=null;
